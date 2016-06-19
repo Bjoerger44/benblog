@@ -1,0 +1,21 @@
+<h1>Welcome to Bennett's Blog</h1>
+<h3>Vent your thoughts, at the expense of everyone in G25</h3>
+<ul>
+  {{#each users}}
+  <li>
+    <h3>
+      {{this.username}}
+    </h3>
+    <h3>
+     <img src={{this.image}}>
+    </h3>
+  </li>
+  {{/each}}
+</ul>
+<h1>What's on your mind?</h1>
+<form action='' method="post">
+  <input type="text" name="username" placeholder="username"><br><br>
+  <input type="text" name="image" placeholder="image url"><br><br>
+  <textarea name="comment" placeholder="What's on your mind?"></textarea><br><br>
+  <button type="submit">Submit</button>
+</form>
